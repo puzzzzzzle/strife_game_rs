@@ -4,3 +4,7 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+# ecs
+bevy_ecs = "^0.16.1"
+# physics
+rapier2d = "^0.26.1"
