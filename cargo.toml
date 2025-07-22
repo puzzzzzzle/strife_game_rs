@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "costrife_game_coremmon",
+]
+resolver = "2"
+
