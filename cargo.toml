@@ -1,11 +1,6 @@
-[package]
-name = "strife_game"
-version = "0.1.0"
-edition = "2024"
-
 [workspace]
 members = [
-    "costrife_game_coremmon",
+    "strife_game_core",
     "strife_text_game",
     "serde_json_display_derive",
 ]
