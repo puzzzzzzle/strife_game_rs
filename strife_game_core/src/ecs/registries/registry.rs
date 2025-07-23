@@ -23,6 +23,9 @@ impl Registry {
             name: name.into(),
         }
     }
+    /**
+     * 添加数新的system后, 最好重写init下
+     */
     pub fn initlize(&mut self) -> Result<(), EcsError> {
         self.schedule_readonly
             .initialize(&mut self.world)

@@ -3,7 +3,6 @@ use derive_more::{Deref, DerefMut, From, Into};
 use glam::Vec2;
 use serde::{Deserialize, Serialize};
 use serde_json_display_derive::JsonDisplay;
-use std::ops::Deref;
 
 // 位置
 #[derive(
@@ -22,6 +21,8 @@ use std::ops::Deref;
     Into,
 )]
 pub struct Position(pub Vec2);
+// TODO 添加网格追踪, 用于快速查找附近的单位, 可以考虑 bevy_spatial
+
 #[test]
 fn test_position() {
     let pos = Position(Vec2::new(1.0, 2.0));

@@ -1017,6 +1017,7 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "bevy_ecs",
+ "crossbeam",
  "derive_more 2.0.1",
  "glam 0.30.4",
  "rapier2d",
@@ -1024,6 +1025,13 @@ dependencies = [
  "serde_json",
  "serde_json_display_derive",
  "thiserror",
+]
+
+[[package]]
+name = "strife_text_game"
+version = "0.1.0"
+dependencies = [
+ "strife_game_core",
 ]
 
 [[package]]

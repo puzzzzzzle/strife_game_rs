@@ -6,13 +6,20 @@ edition = "2024"
 [dependencies]
 # ecs
 bevy_ecs = "^0.16"
-glam = {version =  "^0.30", features = ["serde"] }
-derive_more = {version =  "^2.0", features = ["full"] }
 
-# physics
+# 物理模拟
 rapier2d = "^0.26"
 
-# serialize
+# 数学库, 尤其是vec
+glam = {version =  "^0.30", features = ["serde"] }
+
+# 一些通用derive库
+derive_more = {version =  "^2.0", features = ["full"] }
+
+# mpmc queue
+crossbeam = "^0.8"
+
+# 序列化反序列化
 serde = { version = "^1.0", features = ["derive"] }
 serde_json = "^1.0"
 serde_json_display_derive = { path = "../serde_json_display_derive" }

@@ -30,7 +30,7 @@ pub fn monster_ai_execute_system(
     mut reader: EventReader<MonsterAIDecision>,
 ) {
     for decision in reader.read() {
-        if let Ok((mut pos, mut vel)) = query.get_mut(decision.entity) {
+        if let Ok((pos, mut vel)) = query.get_mut(decision.entity) {
             // 修改朝向
             // 根据当前位置 和 目标位置 计算方向, 并修改速度
             let direction = (decision.decide.target - pos.0).normalize();

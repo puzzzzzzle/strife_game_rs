@@ -1,3 +1,6 @@
 pub mod ecs;
-mod game;
-mod configures;
+pub mod game;
+pub mod configures;
+
+pub use game::Game;
+pub use configures::*;
